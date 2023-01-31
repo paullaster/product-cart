@@ -1,9 +1,22 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link>
-    <router-link to="/product">Products</router-link>
-    <router-link to="/past-orders">Past orders</router-link>
-  </div>
+  <header class="top-bar spread">
+        <nav class="top-bar-nav">
+          <router-link to="/" class="top-bar-link">
+            <i class="icofont-spoon-and-fork"></i>
+            <span>Home</span>
+          </a>
+          <router-link to="/products" class="top-bar-link">
+            <span>Products</span>
+          </a>
+          <router-link to="/past-orders" class="top-bar-link">
+            <span>Past Orders</span>
+          </a>
+        </nav>
+        <router-link to="/cart" class="top-bar-cart-link">
+          <i class="icofont-cart-alt icofont-1x"></i>
+          <!-- <span @click="toggleCart">Cart({{itemsInCart}})</span> -->
+        </a>
+      </header>
   <router-view />
 </template>
 
