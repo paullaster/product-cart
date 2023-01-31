@@ -51,6 +51,7 @@
 
 <script>
     export default {
+        props: ["toggle", "cart", "inventory", "remove"],
         methods: {
           getPrice(name, array) {
             const item = array.find((item) => item.name === name);
