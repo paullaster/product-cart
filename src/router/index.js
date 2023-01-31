@@ -4,5 +4,7 @@ import HomePage from '../views/HomePage';
 const routes =[
     {
         path: '/',
+        name: 'Home',
+        component: HomePage
     }
 ]
