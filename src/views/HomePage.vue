@@ -56,6 +56,6 @@ export default {
     },
   },
   props: ["inventory"],
-    name: "HomePage",
+  name: "HomePage",
 }
 </script>
