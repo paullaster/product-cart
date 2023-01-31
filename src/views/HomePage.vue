@@ -51,6 +51,11 @@
 <script>
  import food from '../food.json';
 export default {
+  methods: {
+    productIcon (icon) { 
+        return `icofont-10x icofont-${icon}`; 
+    },
+  },
   data () {
     return {
         inventory: food
