@@ -4,6 +4,7 @@
     <router-link to="/product">Products</router-link>
     <router-link to="/past-orders">Past orders</router-link>
   </div>
+  <router-view />
 </template>
 
 <style>
