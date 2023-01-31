@@ -51,6 +51,23 @@
 
 <script>
     export default {
-        
+        methods: {
+          getPrice(name, array) {
+            const item = array.find((item) => item.name === name);
+            return item.price.USD;
+          },
+          checkEmptyCart(obj){
+            if (Object.keys(obj).length === 0) return true;
+            return false;
+          },
+          calculateTotal(callback, object, array) {
+            const total = Object.entries(object).reduce(
+              (acc, curr) => {
+                return acc + (curr[1] * callback( curr[0], array))
+              }, 0
+            );
+            return total.toFixed(2);
+          },
+        },
     }
 </script>
