@@ -4,18 +4,18 @@
           <router-link to="/" class="top-bar-link">
             <i class="icofont-spoon-and-fork"></i>
             <span>Home</span>
-          </a>
+          </router-link>
           <router-link to="/products" class="top-bar-link">
             <span>Products</span>
-          </a>
+          </router-link>
           <router-link to="/past-orders" class="top-bar-link">
             <span>Past Orders</span>
-          </a>
+          </router-link>
         </nav>
         <router-link to="/cart" class="top-bar-cart-link">
           <i class="icofont-cart-alt icofont-1x"></i>
           <!-- <span @click="toggleCart">Cart({{itemsInCart}})</span> -->
-        </a>
+        </router-link>
       </header>
   <router-view />
 </template>
