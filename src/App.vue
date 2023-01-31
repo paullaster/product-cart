@@ -26,7 +26,8 @@ import SidebarComponent from './components/Sidebar-component.vue';
 </template>
 
 <script>
+  import SidebarComponent from './components/SidebarComponent.vue';
   export default {
-    import SidebarComponent from "@/components/SidebarComponent";
+    
   }
 </script>
