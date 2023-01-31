@@ -12,6 +12,11 @@ const routes =[
         path: '/products',
         name: 'Products',
         component: ProductsPage
+    },
+    {
+        path: '/past-orders',
+        name: 'Past-Orders',
+        component: PastOrdersPage
     }
 ]
 
