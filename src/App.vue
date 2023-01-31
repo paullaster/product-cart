@@ -24,3 +24,7 @@ import SidebarComponent from './components/Sidebar-component.vue';
 
   <SidebarComponent />
 </template>
+
+<script>
+
+</script>
