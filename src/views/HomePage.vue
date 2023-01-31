@@ -49,7 +49,12 @@
 </template>
 
 <script>
+ import food from '../food.json';
 export default {
+  data () {
+    return {
+    }
+  },
     name: "HomePage",
 }
 </script>
