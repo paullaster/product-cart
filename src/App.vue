@@ -1,3 +1,6 @@
+
+import SidebarComponent from './components/Sidebar-component.vue';
+
 <template>
   <header class="top-bar spread">
         <nav class="top-bar-nav">
@@ -18,4 +21,6 @@
         </router-link>
       </header>
   <router-view />
+
+  <SidebarComponent />
 </template>
