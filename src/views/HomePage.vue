@@ -4,6 +4,8 @@
     </div>
 </template>
 
-export default = {
-    
+<script>
+export default {
+ name: "Home"
 }
+</script>
