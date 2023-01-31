@@ -34,6 +34,7 @@ import SidebarComponent from './components/Sidebar-component.vue';
 
 <script>
   import SidebarComponent from './components/SidebarComponent.vue';
+  import food from './food.json';
 
   export default {
     components: {
