@@ -3,3 +3,7 @@
         This is products page
     </div>
 </template>
+
+<script>
+
+</script>
