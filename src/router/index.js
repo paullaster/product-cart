@@ -8,3 +8,7 @@ const routes =[
         component: HomePage
     }
 ]
+
+const routers = createRouter ({
+    
+})
