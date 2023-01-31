@@ -53,6 +53,7 @@
 export default {
   data () {
     return {
+        inventory: food
     }
   },
     name: "HomePage",
