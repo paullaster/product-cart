@@ -22,7 +22,14 @@ import SidebarComponent from './components/Sidebar-component.vue';
       </header>
   <router-view />
 
-  <SidebarComponent />
+  <SidebarComponent
+    v-if="showSidebar" 
+    :toggle="toggleCart" 
+    :cart="cart"
+    :inventory="inventory" 
+    :icon="productIcon()" 
+    :remove="removeItem"
+  />
 </template>
 
 <script>
