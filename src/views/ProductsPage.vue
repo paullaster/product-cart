@@ -5,6 +5,7 @@
         <div class="card-container">
           <ProductCard 
           v-for="product in inventory"
+          :addToCart="addToCart"
           :product="product"
           :key="product.id"
           />
@@ -18,7 +19,7 @@ import ProductCard from '@/components/ProductCard.vue';
 
 export default {
     name: "ProductPage",
-    props:["inventory"],
+    props:["inventory", "addToCart"],
     components: { ProductCard }
 }
 </script>
