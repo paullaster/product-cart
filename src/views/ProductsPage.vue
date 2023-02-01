@@ -5,6 +5,8 @@
         <div class="card-container">
           <ProductCard 
           v-for="product in inventory"
+          :product="product"
+          :key="product.id"
           />
         </div>
       </main>
