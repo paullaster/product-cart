@@ -29,7 +29,7 @@
             </form>
         </div>
         <div class="card-footer">
-            <button @click="addToCart(product.name, index)" class="btn btn-light">
+            <button @click="addToCart(product.name, quantity)" class="btn btn-light">
                 Add to cart
             </button>
         </div>
