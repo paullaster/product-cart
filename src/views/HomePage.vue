@@ -50,7 +50,7 @@
 
 <script>
 export default {
-  props: ["inventory", "icon"],
+  props: ["inventory", "addToCart", "icon"],
   name: "HomePage",
 }
 </script>
