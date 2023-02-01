@@ -44,6 +44,7 @@ import SidebarComponent from './components/Sidebar-component.vue';
   },
   data () {
     return {
+      showSidebar: true,
       inventory: food,
       cart:{}
     }  
