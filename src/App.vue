@@ -35,10 +35,9 @@ export default {
     productIcon(icon) {
       return `icofont-10x icofont-${icon}`;
     },
-    addToCart(name, itemID) {
+    addToCart(name, quantity) {
       if (!this.cart[name]) this.cart[name] = 0;
-      this.cart[name] += this.inventory[itemID].quantity;
-      this.inventory[itemID].quantity = 0;
+      this.cart[name] += quantity;
       console.log(this.cart);
     },
     toggleCart() {
