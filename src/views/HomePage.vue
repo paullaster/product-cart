@@ -13,6 +13,7 @@
             v-for="(product, index) in inventory"
             :addToCart="addToCart"
             :icon="icon"
+            :index="index"
             :key="product.id"
             />
         </div>
