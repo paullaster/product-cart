@@ -10,8 +10,10 @@
 
         <div class="recommended">
             <ProductCard 
+            v-for="(product, index) in inventory"
             :addToCart="addToCart"
             :icon="icon"
+            :key="product.id"
             />
         </div>
     </main>
