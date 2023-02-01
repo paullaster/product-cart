@@ -41,7 +41,7 @@ export default {
  props: ["product", "addToCart"],
  data(){
     return{
-        
+        quantity: 0
     }
  }
 }
