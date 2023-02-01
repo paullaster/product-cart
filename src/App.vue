@@ -15,10 +15,10 @@ import SidebarComponent from './components/Sidebar-component.vue';
             <span>Past Orders</span>
           </router-link>
         </nav>
-        <router-link to="/cart" class="top-bar-cart-link">
+        <div class="top-bar-cart-link">
           <i class="icofont-cart-alt icofont-1x"></i>
-          <!-- <span @click="toggleCart">Cart({{itemsInCart}})</span> -->
-        </router-link>
+          <span @click="toggleCart">Cart({{itemsInCart}})</span>
+        </div>
       </header>
   <router-view :inventory="inventory"/>
 
