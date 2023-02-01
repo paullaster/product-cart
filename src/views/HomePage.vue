@@ -18,6 +18,9 @@
 import ProductCard from '@/components/ProductCard.vue';
 export default {
   props: ["inventory", "addToCart", "icon"],
+  components:{
+    ProductCard
+  },
   name: "HomePage",
 }
 </script>
