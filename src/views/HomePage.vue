@@ -10,7 +10,7 @@
 
         <div class="recommended">
             <ProductCard 
-            
+            :addToCart="addToCart"
             />
         </div>
     </main>
