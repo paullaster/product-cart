@@ -20,9 +20,9 @@ import SidebarComponent from './components/Sidebar-component.vue';
       <span @click="toggleCart">Cart({{ itemsInCart }})</span>
     </div>
   </header>
-  <router-view :inventory="inventory" />
+  <router-view :inventory="inventory" :icon="productIcon"/>
 
-  <SidebarComponent v-if="showSidebar" :toggle="toggleCart" :cart="cart" :inventory="inventory" :icon="productIcon"
+  <SidebarComponent v-if="showSidebar" :toggle="toggleCart" :cart="cart" :inventory="inventory"
     :remove="removeItem" />
 </template>
 
