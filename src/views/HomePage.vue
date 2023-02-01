@@ -12,7 +12,7 @@
             <div v-for="(product, index) in inventory.slice(0, 3)" :key="product.id" class="card">
                 <div class="card-title">{{ product.name }}</div>
                 <div class="card-body">
-                    <i :class="productIcon(product.icon)"></i>
+                    <i :class="icon(product.icon)"></i>
                     <form>
                         <div class="row">
                             <div class="cell">
