@@ -39,6 +39,9 @@ import SidebarComponent from './components/Sidebar-component.vue';
   export default {
   methods: {
   },
+  computed:{
+
+  },
   data () {
     return {
       inventory: food,
