@@ -22,7 +22,7 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr v-for="(quantity, item) in cart">
+                  <tr v-for="(quantity, item, i) in cart" :key="i">
                     <td><i class="icofont-carrot icofont-3x"></i></td>
                     <td>{{item}}</td>
                     <td>\${{getPrice(item, inventory)}}</td>
