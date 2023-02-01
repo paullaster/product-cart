@@ -40,7 +40,14 @@ import SidebarComponent from './components/Sidebar-component.vue';
   methods: {
   },
   computed:{
-
+    itemsInCart(){
+            const items = Object.values(this.cart).reduce(
+              (acc, curr) => {
+                return acc + curr;
+              }, 0
+            );
+            return items;
+          },
   },
   data () {
     return {
