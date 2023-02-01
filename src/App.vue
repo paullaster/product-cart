@@ -27,7 +27,7 @@ import SidebarComponent from './components/Sidebar-component.vue';
     :toggle="toggleCart" 
     :cart="cart"
     :inventory="inventory" 
-    :icon="productIcon()" 
+    :icon="productIcon" 
     :remove="removeItem"
   />
 </template>
