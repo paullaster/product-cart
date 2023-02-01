@@ -6,6 +6,7 @@
           <ProductCard 
           v-for="product in inventory"
           :addToCart="addToCart"
+          :icon="icon"
           :product="product"
           :key="product.id"
           />
