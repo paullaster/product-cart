@@ -4,7 +4,7 @@
 
         <div class="card-container">
           <ProductCard 
-          
+          v-for="product in inventory"
           />
         </div>
       </main>
@@ -16,6 +16,7 @@ import ProductCard from '@/components/ProductCard.vue';
 
 export default {
     name: "ProductPage",
+    props:["inventory"],
     components: { ProductCard }
 }
 </script>
