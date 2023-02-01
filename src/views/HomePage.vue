@@ -14,6 +14,7 @@
             :addToCart="addToCart"
             :icon="icon"
             :index="index"
+            :product="product"
             :key="product.id"
             />
         </div>
