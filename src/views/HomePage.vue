@@ -11,6 +11,7 @@
         <div class="recommended">
             <ProductCard 
             :addToCart="addToCart"
+            :icon="icon"
             />
         </div>
     </main>
