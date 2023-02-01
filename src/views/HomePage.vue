@@ -10,7 +10,7 @@
 
         <div class="recommended">
             <ProductCard 
-            v-for="(product, index) in inventory"
+            v-for="(product, index) in inventory.slice(0, 3)"
             :addToCart="addToCart"
             :icon="icon"
             :index="index"
