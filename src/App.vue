@@ -37,6 +37,8 @@ import SidebarComponent from './components/Sidebar-component.vue';
   import food from './food.json';
 
   export default {
+  methods: {
+  },
   data () {
     return {
       inventory: food,
