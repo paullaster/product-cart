@@ -50,11 +50,6 @@
 
 <script>
 export default {
-  methods: {
-    productIcon (icon) { 
-        return `icofont-10x icofont-${icon}`; 
-    },
-  },
   props: ["inventory"],
   name: "HomePage",
 }
