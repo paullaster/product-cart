@@ -3,7 +3,9 @@
         <h1>Products</h1>
 
         <div class="card-container">
-          <ProductCard
+          <ProductCard 
+          
+          />
         </div>
       </main>
 </template>
