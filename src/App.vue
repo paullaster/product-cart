@@ -38,6 +38,28 @@ import SidebarComponent from './components/Sidebar-component.vue';
 
   export default {
   methods: {
+    productIcon(icon) {
+            return `icofont-10x icofont-${icon}`;
+          },
+          addToCart(name, itemID) {
+            if (!this.cart[name]) this.cart[name] = 0;
+            this.cart[name] += this.inventory[itemID].quantity;
+            this.inventory[itemID].quantity  = 0;
+            console.log(this.cart);
+          },
+          toggleCart() {
+            this.showSidebar = !this.showSidebar;
+          },
+          randomIndex() {
+            const startIndex = Math.floor(
+              Math.random() * (this.inventory.length / 2)
+            );
+            const endIndex = Math.floor(Math.random() * this.inventory.length);
+            return [startIndex, endIndex];
+          },
+          removeItem(key, object){
+            delete object[key];
+          },
   },
   computed:{
     itemsInCart(){
