@@ -38,6 +38,11 @@
 
 <script>
 export default {
-    
+ props: ["product", "addToCart"],
+ data(){
+    return{
+        
+    }
+ }
 }
 </script>
