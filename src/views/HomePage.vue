@@ -9,7 +9,7 @@
         <h2>Recommended</h2>
 
         <div class="recommended">
-            
+            <ProductCard />
         </div>
     </main>
 </template>
@@ -19,8 +19,9 @@ import ProductCard from '@/components/ProductCard.vue';
 export default {
   props: ["inventory", "addToCart", "icon"],
   components:{
+    ProductCard,
     ProductCard
-  },
+},
   name: "HomePage",
 }
 </script>
